@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<!-- this font style is used this webpage - google fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Tajawal&family=Ysabeau+Infant:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Tajawal&family=Ysabeau+Infant:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+<!-- fontawsome cdn websites -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- this is from font awsome website to dowlod icons -->
+    <!-- go to font awsome cdn website and copy (copy tag link) then paste to the html header section and goto font awsom e icon website and copy the icon link and paste the corresponding position inside the body part -->
+      <!--fa-2x is used to double the icon size-->
+    <!-- we can engter fa-2x or fa-3x etx end of the link -->
+
+    <!-- <i class="fa-brands fa-instagram fa-3x"></i>
+    <i class="fa-brands fa-youtube fa-flip fa-3x"></i>
+    <i class="fa-brands fa-whatsapp fa-bounce fa-3x"></i>
+   
+
+    <h1>Luminar</h1>
+    <h2>Techno lab</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci harum accusantium unde autem deleniti neque porro exercitationem, itaque sed quaerat repellat soluta et pariatur illum aut repellendus maxime quidem.</p> -->
+
+    <div class="container" id="container">
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <!-- image -->
+            <img class="logo" src="./Images/a-business-woman-who-explains-drawings_csp12051090.jpg" alt="">
+
+            <!-- list -->
+            <ul>
+                <li class="linkitems"><a class="links" href="#home">HOME</a></li> <!-- href=# to go home , first set section id to the home section-->
+                <li class="linkitems"><a class="links"  href="#about">ABOUT</a></li>
+                <li class="linkitems"><a class="links"  href="#skills">SKILL</a></li>
+                <li class="linkitems"><a class="links"  href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- home -->
+        <section id="home"> <!-- to create sections -->
+            <div class="title">
+                <h1 class="title_h1">I'm Sreelakshmi <span id="lastname">P S</span></h1>
+                <p class="title_p">This is my official portfolio
+                <br>
+                Details and work experience in Web Development</p>
+                <a class="download" href="https://drive.google.com/file/d/1ZDC61UreaiWUNyy2vFnKi8zYwb8Jqtoo/view?usp=drive_link"  target="_blank" download="">DOWNLOAD CV</a><!--  to download -->
+                <!-- to get preview of the document -> first upload document in google drive and make permission enable(anyone with link)  and copy the link then paste the href link in a tag-->
+                <!-- here give target blank we can see the preview of the document in next page or next tab -->
+            </div>
+            <!-- Image -->
+            <div class="images">
+                <img id="shape" src="./Images/shape.png" alt="">
+                <img id="girl" src="./Images/girl.png" alt="">
+
+            </div>
+
+        </section>
+        
+        <!-- about -->
+        <section id="about">
+
+                <div class="heading">
+                    <h2>About Me</h2>
+                    <SPAn>Introduction</SPAn>
+                </div>
+                <div class="about-content">
+                    <!-- image -->
+                    <div class="about-img">
+                        <img src="./Images/about1.png" alt="img">
+
+                    </div>
+                    <!-- content -->
+                    <div class="about-details">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magnam facilis ipsa repellendus explicabo et ex. Suscipit accusantium et modi quos sed voluptatum at temporibus corporis? Totam maiores ea voluptatibus?
+
+                        </p>
+                        <div class="information">
+                                 <div class="info-box">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Sreelakshmi P S</span> <!--to use span here to write this inline(just side by i tag)-->
+                                </div>
+                                <div class="info-box">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>sreelakshmips32@gmail.com</span>
+                                </div>
+                               <div class="info-box"> 
+                                <i class="fa-solid fa-phone"></i>
+                                <span>9207799496</span>
+                            </div>
+
+                               <div class="info-box">
+                                <i class="fa-brands fa-github"></i>
+                                <span>sreelakshmisukumaran</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- skills -->
+        <section id="skills">
+            <!-- heading -->
+            <div class="heading">
+                <h2>Skills</h2>
+                <span>My Skills</span>
+
+            </div>
+            
+            <div class="skill-container">
+                <!-- progres -->
+                <div class="progress-container">   
+
+                    <div class="progres-bar">
+                    <h3>HTML</h3>
+                    <span>98%</span>    
+                    <!-- 2 bars  -->
+                    <div class="base-bar"></div>
+                    <div  class="base-bar html-bar"></div> 
+                    </div>  
+                
+                   <div class="progres-bar">
+                    <h3>CSS</h3>
+                    <span>90%</span>    
+                    <div  class="base-bar"></div>
+                    <div  class="base-bar css-bar"></div> 
+                  </div>          
+                  <div class="progres-bar">
+                    <h3>JS</h3>
+                    <span>85%</span>    
+                    <div  class="base-bar"></div>
+                    <div  class="base-bar js-bar"></div> 
+                  </div>          
+                  <div class="progres-bar">
+                    <h3>REACT</h3>
+                    <span>87%</span>    
+                    <div  class="base-bar"></div>
+                    <div  class="base-bar react-bar"></div> 
+                  </div>          
+                </div>
+
+                <!-- image -->
+                <div class="skill-img">
+                    <img src="./Images/skills.webp" alt="">
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- contact sections -->
+        <section id="contact">
+            <div class="heading">
+                <h1>contact</h1>
+                <span>My Contact</span>
+            </div>
+            <div class="icons">
+               
+                <!-- instagram -->
+                <div  class="icon">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" ></i></a>
+                </div>
+                <!-- github -->
+
+                <div class="icon">
+                    <a href="https://github.com/"><i class="fa-brands fa-github" style="color: white;"></i></a>
+                </div>
+                <!-- whatsup -->
+                <div class="icon">
+                    <a href="" target="_blank"> <i class="fa-brands fa-whatsapp" ></i></a>
+                 </div>
+                <!-- likedin -->
+                <div class="icon">
+                   <a href=""><i class="fa-brands fa-linkedin-in" ></i></a>
+
+                </div>
+                <!-- twitter -->
+                <div class="icon">
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-in"><i class="fa-brands fa-twitter" ></i></a>
+                </div>
+                 <!-- facebook -->
+                 <div class="icon">
+                    <a href="https://www.linkedin.com/in/sreelakshmi-p-s-7ab46418a/"><i class="fa-brands fa-facebook" ></i></a>
+                    
+                </div>
+                
+            </div>
+            <div class="end-content">
+                 
+            </div>
+        </section>
+
+        <!-- copy right footer  -->
+       <footer>
+        <p style="text-align: center; font-weight: bold;">&copy; My portfolio design 2023, All rights Reserved &reg; Sreelakshmi P S</p>
+
+        <div class="up-arrow">
+            <a href="#container"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+        </div>
+
+       </footer>
+       
+    </div>
+               
+
+    
+</body>
+</html>

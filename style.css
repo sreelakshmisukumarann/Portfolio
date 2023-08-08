@@ -1,0 +1,280 @@
+/* h1{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+h2{
+    font-family: 'Tajawal', sans-serif;
+}
+p{
+    font-family: 'Tajawal', sans-serif;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+/*this is the whole body screen*/
+.container{
+    width: 100%;
+    height: 100vh;/*view port hight unit(vh)- can display the whole screen height
+    ie. cover the whole screen height with 100%*/
+    position: relative;
+    background-color: white;
+}
+.navbar{
+    display: flex;  /*to move list next to the image, ie. to display side by side */
+    justify-content: space-between;/*align both in different side and made a space in center*/
+    margin-left: 100px;
+    align-items: center;
+    width: 85%;
+
+
+}
+.logo{
+    width: 130px;
+}
+.linkitems{
+    display: inline-block; /*to display horizontal*/
+    margin: 10px 20px;
+
+}
+.links{
+    text-decoration: none; /*to remove underline*/
+    font-weight: bold;
+    color: black;
+}
+/* pseudo class - to change status */
+/* selector:pseudo{property:value;} */
+.links:hover{
+    color: orange;
+    /* font-size: 60px; to hover also change the size */
+}
+.title{
+    margin-top: 13% ;
+    margin-left: 8%;
+
+}
+.title_h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.title_p{
+    font-size: 19px;
+}
+#lastname{
+    color: orange;
+}
+.download{
+    background-color: black;
+    color:white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%; /* to set left side space to hover */
+    bottom: 0px;
+    transform: translateX(-50%); /*to remove scroll bar*/
+    transition: bottom 1s, left 2s; /*to set movement speed- here set movement is slow*/
+}
+.images:hover #shape{
+    bottom: 70px;
+
+}
+.images:hover #girl{
+    left: 40%;
+      
+}
+
+/* begining of about sections */
+#about{
+    margin: 19% 8% 0px 8%;
+}
+.heading{
+    text-align: center;
+
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 23px;
+    color: orange;
+    font-weight: bold;
+}
+.about-content{
+    display: grid; /*display side by side*/
+    grid-template-columns: repeat(2,1fr); /* also set display grid we set a value of frame colums*/
+    /* here set 2 frames with 1fr unit means 255 px */
+    
+    gap: 2rem; /* to set gap between to div frame (grid column)*/
+    /* 1rem - 16px */
+    margin-top: 25px;
+
+
+}
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about-details{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+}
+.information{
+    margin-top: 2rem; /*space between paragraph and icon details*/
+}
+.info-box{
+    margin-bottom: 1rem; /* space bewteen each info box(icon and contentens)*/
+}
+.info-box span{
+    margin-left: 15px; /*space between icon and span tag*/
+}
+
+/* begining of skiklls sections */
+html{
+    scroll-behavior: smooth; /*to move to the next section like scroll.*/
+}
+#skills{
+    margin: 4% 8% 0px 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 85%;
+    padding-left: 4rem;
+}
+.progres-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.progres-bar span{
+    color: orange;
+    font-weight: bold;
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+     position: absolute;
+    bottom: 0px;
+    left: 0px; 
+}
+/* progress bars */
+.html-bar{
+    background-color: orange;
+    width: 98%;
+}
+.css-bar{
+    background-color: orange;
+    width: 90%;
+}
+.js-bar{
+    background-color: orange;
+    width: 85%;
+}
+.react-bar{
+    background-color: orange;
+    width: 87%;
+}
+/* end of the prograss bars */
+#contact{
+    margin: 4% 8% 0px 8%;
+}
+/* .icons{
+    display: grid;
+    grid-template-columns: repeat(6,2rem);
+    gap: 1rem;
+   
+    margin: 7% 38%;
+    margin-top: 3%;
+    font-size: 2rem;
+} */
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    /* font-size: 25px; */
+    /*  display: flex;
+    justify-content: center; (horizontaly align)
+    align-items: center(vertically align); -> use this three property  to align the content exact center of the div */
+}
+.icon,.up-arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /*shape of circle radius*/
+    /* border: 1px solid; ->just show circle div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px; /*space between circles*/
+}
+.icon i{
+    font-size: 30px;
+    /* color: black; */
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,red); /*to set double shadede color*/
+}
+.icon:hover i{
+    color: white; /* color changing when cliking the icon - this white color is when click icon*/
+    animation: shake 0.75s; /*when click the icon it is shaking, here we set a name shake to this animation */
+    /* 0.75s means how mush time it shakes */
+
+}
+
+/* set shaking properties */
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+
+}
+
+/* footer */
+footer{
+    margin: 3rem 0px;
+}
+.up-arrow{
+    float: right ; /*to aligh right side*/
+    background-image: linear-gradient(to bottom right,yellow,red);
+    margin: 0px 10px 50px 0px;
+
+}
+.up-arrow:hover i{
+    color: white;
+}
